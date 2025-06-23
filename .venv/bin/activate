@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/dwaynejoseph/Projects/agent-lab/.venv"
+VIRTUAL_ENV="/Users/dwaynejoseph/Projects/python-agent/.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
