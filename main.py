@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 from pathlib import Path
 from tools import tool_definitions, tool_functions  # Updated variable name for clarity
 
-# Load environment variables
-load_dotenv(dotenv_path=Path(__file__).resolve().parent / ".env")
+# Load environment variables (override existing)
+load_dotenv(dotenv_path=Path(__file__).resolve().parent / ".env", override=True)
 
 # Set up OpenAI client
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
